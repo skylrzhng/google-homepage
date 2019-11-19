@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Example</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <style>
+            body {
+                text-align:center;
+                margin:0;
+            }
+            .nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .navright {
+                float:right;
+            }
+            li a, .navright a, .footerright a {
+                float:left;
+                display:block;
+                padding: 20px 16px;
+                text-decoration: none;
+                color:#333333;
+                font-family:Helvetica;
+                font-size: 12px;
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
+            #logo{
+                width:250px;
+                margin:auto;
+                padding-top:200px;
+            }
+            #search {
+                width: 500px;
+                height:200px;
+                display:inline-block;
+            }
+            input[type=text] {
+                border-radius: 20px;
+                border: 1px solid lightgray;
+                width:100%;
+                height:30px;
+                padding:4px 20px;
+                outline:none;
+                font-size:12px;
+                font-family:Lato;
+            }
+            input[type=text]:hover, input[type=text]:focus {
+                box-shadow: 1px 1px 8px 0 lightgray;
+            }
+            input[type=submit] {
+                width:150px;
+                border-radius: 6px;
+                padding:12px 4px;
+                background-color: ghostwhite;
+                color:gray;
+                font-size: 13px;
+                border:none;
+                outline:none;
+                margin:0px 8px;
+            }
+            .footer {
+                width:100%;
+                height:40px;
+                background-color:whitesmoke;
+                position:fixed;
+                bottom:0px;
+                border-top: 1px solid lightgray;
+            }
+            .footerleft ul, .footerright ul {
+                list-style-type:none;
+                margin: 8px 8px -16px 8px;
+                padding:0;
+            }
+            .footerright {
+                float:right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='nav'>
+            <ul>
+                <li><a href="https://about.google/">About</a></li>
+                <li><a href="https://store.google.com/US/">Store</a></li>
+            </ul>
+            <div class='navright'>
+                            <a href="https://www.google.com/gmail/about/#">Gmail</a>
+
+                            <a href="https://www.google.com/imghp">Images</a>
+                </div>    
+        </div>
+        <div id = 'logo'>
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="250">
+        </div>
+        <div id = 'search'>
+            <form>
+                <p>
+                    <input type="text">
+                </p>
+                <p>
+                    <input type="submit" value="Google Search">
+                    <input type="submit" value="I'm Feeling Lucky">
+                </p>
+            </form>
+        </div>
+        <div class ='footer'>
+            <div class='footerleft'>
+                <ul>
+                    <li><a href="https://ads.google.com/home/">Advertising</a></li>
+                    <li><a href="https://www.google.com/services/">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                </ul>
+            </div>
+            <div class='footerright'>
+                <a href="https://policies.google.com/privacy">Privacy</a>
+                <a href="https://policies.google.com/terms?fg=1">Terms</a>
+                <a href="https://www.google.com/preferences?hl=en">Settings</a>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
